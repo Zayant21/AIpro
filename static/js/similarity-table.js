@@ -1,3 +1,17 @@
+$(document).ready(function () {
+  let threshold = 60;
+  $('#new-threshold-input').val(threshold);
+  $('#new-threshold-input').keypress(function (event) {
+    if (event.which === 13) {
+      const newThreshold = parseInt($('#new-threshold-input').val());
+      if (!isNaN(newThreshold)) {
+        threshold = newThreshold;
+        sendRequest();
+      }
+    }
+  });
+
+
 const gridOptions = {
     columnDefs: [],
     defaultColDef: { resizable: true },
@@ -81,7 +95,7 @@ const gridOptions = {
             };
         } else {
             return {
-                backgroundColor: similarity >= 60 ? '#90EE90' : '#FF7276'
+                backgroundColor: similarity >= threshold ? '#90EE90' : '#FF7276'
             };
         }
         },
@@ -136,3 +150,4 @@ const gridOptions = {
       });
   }
 
+});

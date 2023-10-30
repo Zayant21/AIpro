@@ -9,104 +9,9 @@ function findDomainInfo(domain) {
     return null; // Return null if the domain is not found in the data
 }
 
-/* Fetching Charts from Domain Name without PreProsessing*/
-function Spacey_TFIDF_Chart_WO(domainId) {
-    if (domainId in spacey_tfidf_dict_wo) {
-        return spacey_tfidf_dict_wo[domainId];
-    }
-    return null;
-}
-
-function KeyBertWordChartWO(domainId) {
-    if (domainId in keybert_relevance_dict_wo) {
-        return keybert_relevance_dict_wo[domainId];
-    }
-    return null;
-}
-
-function rake_Unconstrained_Chart_WO(domainId) {
-    if (domainId in rake_unconstrained_dict_wo) {
-        return rake_unconstrained_dict_wo[domainId];
-    }
-    return null;
-}
-
-function nltk_Word_Chart_WO(domainId) {
-    if (domainId in nltk_word_dict_wo) {
-        return nltk_word_dict_wo[domainId];
-    }
-    return null;
-}
-
-function textrank_Phrase_Chart_WO(domainId) {
-    if (domainId in textrank_phrase_dict_wo) {
-        return textrank_phrase_dict_wo[domainId];
-    }
-    return null;
-}
-
-
-function yake_Phrase_Chart_WO(domainId) {
-    if (domainId in yake_phrase_dict_wo) {
-        return yake_phrase_dict_wo[domainId];
-    }
-    return null;
-}
-
-function pke_Phrase_Chart_WO(domainId) {
-    if (domainId in pke_phrase_dict_wo) {
-        return pke_phrase_dict_wo[domainId];
-    }
-    return null;
-}
-
-/* Fetching Charts from Domain Name with PreProsessing*/
-function Spacey_TFIDF_Chart(domainId) {
-    if (domainId in spacey_tfidf_dict) {
-        return spacey_tfidf_dict[domainId];
-    }
-    return null;
-}
-
-function KeyBertWordChart(domainId) {
-    if (domainId in keybert_relevance_dict) {
-        return keybert_relevance_dict[domainId];
-    }
-    return null;
-}
-
-function rake_Unconstrained_Chart(domainId) {
-    if (domainId in rake_unconstrained_dict) {
-        return rake_unconstrained_dict[domainId];
-    }
-    return null;
-}
-
-function nltk_Word_Chart(domainId) {
-    if (domainId in nltk_word_dict) {
-        return nltk_word_dict[domainId];
-    }
-    return null;
-}
-
-function textrank_Phrase_Chart(domainId) {
-    if (domainId in textrank_phrase_dict) {
-        return textrank_phrase_dict[domainId];
-    }
-    return null;
-}
-
-
-function yake_Phrase_Chart(domainId) {
-    if (domainId in yake_phrase_dict) {
-        return yake_phrase_dict[domainId];
-    }
-    return null;
-}
-
-function pke_Phrase_Chart(domainId) {
-    if (domainId in pke_phrase_dict) {
-        return pke_phrase_dict[domainId];
+function extractDataFromJSON(jsonObject, algoName, domainId) {
+    if (jsonObject[algoName] && jsonObject[algoName][domainId]) {
+        return jsonObject[algoName][domainId];
     }
     return null;
 }
@@ -241,37 +146,40 @@ function setWordCloud(domain_name, name){
 //Set Keywords
 function setKeywords(domain_name){
     var domainInfo = findDomainInfo(domain_name);
-    var keybert_relevance_dict_wo = KeyBertWordChartWO(domainInfo['id']);
-    var spacey_tfidf_dict_wo = Spacey_TFIDF_Chart_WO(domainInfo['id']);
-    var rake_unconstrained_dict_wo = rake_Unconstrained_Chart_WO(domainInfo['id']);
-    var nltk_word_dict_wo = nltk_Word_Chart_WO(domainInfo['id']);
-    var textrank_phrase_dict_wo = textrank_Phrase_Chart_WO(domainInfo['id']);
-    var yake_phrase_dict_wo = yake_Phrase_Chart_WO(domainInfo['id']);
-    var pke_phrase_dict_wo = pke_Phrase_Chart_WO(domainInfo['id']);
 
-    var keybert_relevance_dict = KeyBertWordChart(domainInfo['id']);
-    var spacey_tfidf_dict = Spacey_TFIDF_Chart(domainInfo['id']);
-    var rake_unconstrained_dict = rake_Unconstrained_Chart(domainInfo['id']);
-    var nltk_word_dict = nltk_Word_Chart(domainInfo['id']);
-    var textrank_phrase_dict = textrank_Phrase_Chart(domainInfo['id']);
-    var yake_phrase_dict = yake_Phrase_Chart(domainInfo['id']);
-    var pke_phrase_dict = pke_Phrase_Chart(domainInfo['id']);
+    var keybert_relevance_dict_wo = extractDataFromJSON(chart_data_wo, 'keybert_relevance', domainInfo.id);
+    var spacey_tfidf_dict_wo = extractDataFromJSON(chart_data_wo, 'spacey_tfidf', domainInfo.id);
+    var rake_unconstrained_dict_wo = extractDataFromJSON(chart_data_wo, 'rake_unconstrained', domainInfo.id);
+    var nltk_word_dict_wo = extractDataFromJSON(chart_data_wo, 'nltk_word', domainInfo.id);
+    var textrank_phrase_dict_wo = extractDataFromJSON(chart_data_wo, 'textrank_phrase', domainInfo.id);
+    var yake_phrase_dict_wo = extractDataFromJSON(chart_data_wo, 'yake_phrase', domainInfo.id);
+    var pke_phrase_dict_wo = extractDataFromJSON(chart_data_wo, 'pke_phrase', domainInfo.id);
+    
+    var keybert_relevance_dict = extractDataFromJSON(chart_data, 'keybert_relevance', domainInfo.id);
+    var spacey_tfidf_dict = extractDataFromJSON(chart_data, 'spacey_tfidf', domainInfo.id);
+    var rake_unconstrained_dict = extractDataFromJSON(chart_data, 'rake_unconstrained', domainInfo.id);
+    var nltk_word_dict = extractDataFromJSON(chart_data, 'nltk_word', domainInfo.id);
+    var textrank_phrase_dict = extractDataFromJSON(chart_data, 'textrank_phrase', domainInfo.id);
+    var yake_phrase_dict = extractDataFromJSON(chart_data, 'yake_phrase', domainInfo.id);
+    var pke_phrase_dict = extractDataFromJSON(chart_data, 'pke_phrase', domainInfo.id);
+
+
     if (keybert_relevance_dict_wo && keybert_relevance_dict) {
         var domainInfo = domainInfo['company_domain'];
         var wordHTML = '';
 
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> Keybert Word Relevance w/o Pre Processing </h3>';
-        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Relevance</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
     
         for (var i = 0; i < Math.min(20, keybert_relevance_dict_wo.length); i++) {
             var word = keybert_relevance_dict_wo[i]['word'];
-            var relevance = keybert_relevance_dict_wo[i]['relevance'];
+            var score = keybert_relevance_dict_wo[i]['score'];
     
             wordHTML += `
                 <tr>
                     <td>${word}</td>
-                    <td>${relevance}</td>
+                    <td>${score}</td>
                 </tr>
             `;
         }
@@ -280,16 +188,16 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3> Keybert Word Relevance Pre Processed </h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Relevance</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
        
         for (var i = 0; i < Math.min(20, keybert_relevance_dict.length); i++) {
             var word = keybert_relevance_dict[i]['word'];
-            var relevance = keybert_relevance_dict[i]['relevance'];
+            var score = keybert_relevance_dict[i]['score'];
     
             wordHTML_Processed += `
                 <tr>
                     <td>${word}</td>
-                    <td>${relevance}</td>
+                    <td>${score}</td>
                 </tr>
             `;
         }
@@ -306,17 +214,17 @@ function setKeywords(domain_name){
     if (spacey_tfidf_dict_wo && spacey_tfidf_dict) {
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> Spacey Term Frequency Inverse Document Frequency w/o Pre Processing  </h3>';
-        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>TFIDF</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
 
         
         for (var i = 0; i < Math.min(20, spacey_tfidf_dict_wo.length); i++) {
             var word = spacey_tfidf_dict_wo[i]['word'];
-            var tfidf = spacey_tfidf_dict_wo[i]['tfidf'];
+            var score = spacey_tfidf_dict_wo[i]['score'];
     
             wordHTML += `
                 <tr>
                     <td>${word}</td>
-                    <td>${tfidf}</td>
+                    <td>${score}</td>
                 </tr>
             `;
         }
@@ -325,16 +233,16 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3> Spacey Term Frequency Inverse Document Frequency Pre Processed</h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>TFIDF</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
         
         for (var i = 0; i < Math.min(20, spacey_tfidf_dict.length); i++) {
             var word = spacey_tfidf_dict[i]['word'];
-            var tfidf = spacey_tfidf_dict[i]['tfidf'];
+            var tfidf = spacey_tfidf_dict[i]['score'];
     
             wordHTML_Processed += `
                 <tr>
                     <td>${word}</td>
-                    <td>${tfidf}</td>
+                    <td>${score}</td>
                 </tr>
             `;
         }
@@ -350,16 +258,16 @@ function setKeywords(domain_name){
     if (textrank_phrase_dict_wo && textrank_phrase_dict) {
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> Textrank Phrase Score w/o Pre Processing  </h3>';
-        wordHTML += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
 
         
         for (var i = 0; i < Math.min(20, textrank_phrase_dict_wo.length); i++) {
-            var phrase = textrank_phrase_dict_wo[i]['phrase'];
+            var word = textrank_phrase_dict_wo[i]['Word'];
             var score = textrank_phrase_dict_wo[i]['score'];
     
             wordHTML += `
                 <tr>
-                    <td>${phrase}</td>
+                    <td>${word}</td>
                     <td>${score}</td>
                 </tr>
         
@@ -370,15 +278,15 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3> Textrank Phrase Score Pre Processed </h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
         
         for (var i = 0; i < Math.min(20, textrank_phrase_dict.length); i++) {
-            var phrase = textrank_phrase_dict[i]['phrase'];
+            var word = textrank_phrase_dict[i]['word'];
             var score = textrank_phrase_dict[i]['score'];
     
             wordHTML_Processed += `
                 <tr>
-                    <td>${phrase}</td>
+                    <td>${word}</td>
                     <td>${score}</td>
                 </tr>
         
@@ -442,16 +350,16 @@ function setKeywords(domain_name){
     if (yake_phrase_dict_wo && yake_phrase_dict) {
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> Yake Phrase Score w/o Pre Processing </h3>';
-        wordHTML += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
 
         
         for (var i = 0; i < Math.min(20, yake_phrase_dict_wo.length); i++) {
-            var phrase = yake_phrase_dict_wo[i]['phrase'];
+            var word = yake_phrase_dict_wo[i]['word'];
             var score = yake_phrase_dict_wo[i]['score'];
     
             wordHTML += `
                 <tr>
-                    <td>${phrase}</td>
+                    <td>${word}</td>
                     <td>${score}</td>
                 </tr>
         
@@ -462,11 +370,11 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3>  Yake Phrase Score Pre Processed  </h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
         
-        for (var i = 0; i < Math.min(20, yake_phrase_dict_wo.length); i++) {
-            var word = yake_phrase_dict_wo[i]['phrase'];
-            var score = yake_phrase_dict_wo[i]['score'];
+        for (var i = 0; i < Math.min(20, yake_phrase_dict.length); i++) {
+            var word = yake_phrase_dict[i]['word'];
+            var score = yake_phrase_dict[i]['score'];
     
             wordHTML_Processed += `
                 <tr>
@@ -488,16 +396,16 @@ function setKeywords(domain_name){
     if (pke_phrase_dict_wo && pke_phrase_dict) {
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> PKE Phrase Score w/o Pre Processing </h3>';
-        wordHTML += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
 
         
         for (var i = 0; i < Math.min(20, pke_phrase_dict_wo.length); i++) {
-            var phrase = pke_phrase_dict_wo[i]['phrase'];
+            var word = pke_phrase_dict_wo[i]['word'];
             var score = pke_phrase_dict_wo[i]['score'];
     
             wordHTML += `
                 <tr>
-                    <td>${phrase}</td>
+                    <td>${word}</td>
                     <td>${score}</td>
                 </tr>
         
@@ -508,15 +416,15 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3> PKE Phrase Score Pre Processed  </h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
         
         for (var i = 0; i < Math.min(20, pke_phrase_dict.length); i++) {
-            var phrase = pke_phrase_dict[i]['phrase'];
+            var word = pke_phrase_dict[i]['word'];
             var score = pke_phrase_dict[i]['score'];
     
             wordHTML_Processed += `
                 <tr>
-                    <td>${phrase}</td>
+                    <td>${word}</td>
                     <td>${score}</td>
                 </tr>
         
@@ -534,16 +442,16 @@ function setKeywords(domain_name){
     if (rake_unconstrained_dict_wo && rake_unconstrained_dict) {
         wordHTML += '<div style="display: flex; justify-content: space-between;"><table>';
         wordHTML += '<tr><td><h3> Rake Unconstrained Key Phrases w/o Pre Processing</h3>';
-        wordHTML += '<table><tr><td><strong>Key Phrase</strong></td><td><strong>Score</strong></td></tr>';
+        wordHTML += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
 
         
         for (var i = 0; i <  Math.min(20, rake_unconstrained_dict_wo.length); i++) {
-            var key_phrase = rake_unconstrained_dict_wo[i]['key_phrase'];
+            var word = rake_unconstrained_dict_wo[i]['word'];
             var score = rake_unconstrained_dict_wo[i]['score'];
     
             wordHTML += `
             <tr>
-                <td>${key_phrase}</td>
+                <td>${word}</td>
                 <td>${score}</td>
             </tr>
             `;
@@ -553,15 +461,15 @@ function setKeywords(domain_name){
 
         var wordHTML_Processed = '<table>';
         wordHTML_Processed += '<tr><td><h3> Rake Unconstrained Key Phrases Pre Processed</h3>';
-        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>TFIDF</strong></td></tr>';
+        wordHTML_Processed += '<table><tr><td><strong>Word</strong></td><td><strong>Score</strong></td></tr>';
         
         for (var i = 0; i <  Math.min(20, rake_unconstrained_dict.length); i++) {
-            var key_phrase = rake_unconstrained_dict[i]['key_phrase'];
+            var word = rake_unconstrained_dict[i]['word'];
             var score = rake_unconstrained_dict[i]['score'];
     
             wordHTML_Processed += `
             <tr>
-                <td>${key_phrase}</td>
+                <td>${word}</td>
                 <td>${score}</td>
             </tr>
             `;
