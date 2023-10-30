@@ -7,27 +7,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="../static/js/index.js"></script>
 
 
-    <script>
-        var result_dict = JSON.parse('{{ result_dict | safe }}');
-        var keybert_relevance_dict_wo = JSON.parse('{{ keybert_relevance_dict_wo | safe }}');
-        var spacey_tfidf_dict_wo = {{ spacey_tfidf_dict_wo | safe }};
-        var rake_unconstrained_dict_wo = {{ rake_unconstrained_dict_wo | safe }};
-        var nltk_word_dict_wo = {{ nltk_word_dict_wo | safe }};
-        var textrank_phrase_dict_wo = {{ textrank_phrase_dict_wo | safe }};
-        var yake_phrase_dict_wo = {{ yake_phrase_dict_wo | safe }};
-        var pke_phrase_dict_wo = {{ pke_phrase_dict_wo | safe }};
+<script>
+    var result_dict = JSON.parse({{ result_dict | tojson | safe }});
+    var chart_data_wo = JSON.parse({{ chart_data_wo | tojson | safe }});
+    var chart_data = JSON.parse({{ chart_data | tojson | safe }});
+</script>
 
-        var keybert_relevance_dict = JSON.parse('{{ keybert_relevance_dict | safe }}');
-        var spacey_tfidf_dict = {{ spacey_tfidf_dict | safe }};
-        var rake_unconstrained_dict = {{ rake_unconstrained_dict | safe }};
-        var nltk_word_dict = {{ nltk_word_dict | safe }};
-        var textrank_phrase_dict = {{ textrank_phrase_dict | safe }};
-        var yake_phrase_dict = {{ yake_phrase_dict | safe }};
-        var pke_phrase_dict = {{ pke_phrase_dict | safe }};
-    </script>
     
 </head>
 <body>
@@ -135,8 +122,13 @@
         </div>
         
         <div class="resultgrid-container" id="ResultGridContainer">
+            <div class="vocab-container">
+                <div id="vocabulary-display"> </div>
+            </div>
           <div id="dropdown-container">
             <div class="form-group">
+            <label for="new-threshold-input">Threshold:</label>
+           <input type="text" id="new-threshold-input" placeholder="New Threshold">
               <label for="datatype">Data Type:</label>
               <select id="datatype" name="datatype" style="margin-right: 1cm;">
                 <option value="PreProcessed">Pre Processed</option>
@@ -156,5 +148,8 @@
 
     </div>
     <script src="../static/js/similarity-table.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/vocab.js"></script>
+
 </body>
 </html>

@@ -118,7 +118,8 @@ form {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    font: status-bar;
+    font-size: medium;
 }
 
 input[type="text"],
@@ -278,7 +279,7 @@ align-items: center;
 
 
   label {
-    margin: 10px 0;
+    margin: 10px 5px;
   }
 
 
@@ -316,8 +317,80 @@ align-items: center;
 
   .form-group{
     display: flex;
-    margin-top: 5px;
+    padding-right: 33px;
     align-items: center;
-    justify-content: center;
-    padding-top: 10px;
+    justify-content: flex-end;
+    
   }
+
+  #vocabulary-display {
+    background-color: #f2f2f2;
+    margin-top: 45px;
+    padding: 2px;
+    border-radius: 10px;
+    scale: 0.95;
+}
+
+.vocabulary-word {
+    border: 1px solid #ccc; /* Border with a light gray color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 5px; /* Padding around each word */
+    margin: 5px; /* Spacing between words */
+    display: inline-block; /* Display words inline */
+    font-size: 16px; /* Font size for words */
+}
+.vocabulary-word-selected::before {
+    content: '-';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.add-word-button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+#word-input {
+    display: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.vocabulary-word-selected {
+    background-color: lightgrey;
+    border-radius:
+}
+
+
+#vocab-container {
+    display: flex;
+    align-content: flex-start;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#new-threshold-input {
+    margin-right: 34px;
+    scale: .85;
+    font-size: 14px;
+    width: 100px;
+}
