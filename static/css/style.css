@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Arial, sans-serif; /* Change the font family to your desired font */
+    font-size: 16px; /* Change the font size as needed */
+    color: #333; /* Change the text color to your preferred color */
+}
+
+.custom_button
+    {
+    font-weight: bold;
+    background-color: #007BFF;
+    color: #faf7f7;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom_button:hover {
+    background-color: #f6fcf9;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.left {
+    width: 15%;
+    min-height: 783.250px;
+    background-color: #fcfcfc;
+    padding: 0 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.top-container {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-left {
+    flex-grow: 0;
+}
+
+.bottom-left {
+    flex-grow: 0;
+    margin-top: 1px;
+    font-family: math;
+}
+.bottom-left h3 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.right {
+    width: 85%;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+/* Default styles for the ul element */
+ul {
+    display: grid;
+    justify-items: start;
+    padding: initial;
+    overflow: auto;
+    min-height: fit-content;
+    max-height: 10.5cm;
+}
+
+
+.company-domain {
+    background-color: #fafafa;
+    color: #000;
+    padding: 10px 20px;
+    margin: 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font: -webkit-mini-control;
+    font-size: small;
+    max-width: -webkit-fill-available;
+}
+
+.company-domain:hover {
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.company-domain.active {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin-bottom: 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    max-width: 200px;
+    max-height: 30px;
+    padding-top: 10px;
+    padding-left: 55px;
+    scale: 1.5;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius:100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:100px;
+}
+
+#input-search-bar{
+display: flex;
+align-items: center;
+}
+
+#status-info {
+    font-size: small;
+    margin-top: 1px;
+    font-family: monospace;
+    background: aliceblue;
+    border-radius: 10px;
+}
+.tabs {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 15.5%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2; 
+}
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    border: 1px solid #999;
+}
+.tab.active {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.iframe-container, .scraped-data-container, .processed-data-container, .bar-plot-container, .word-cloud-container, .keywords-container, .similarity-container, .results-container, .wiz-container, .resultgrid-container{
+    margin-top: 39px;
+    display: block;
+}
+
+
+.tab .dropdown-content{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.tab:hover .dropdown-content {
+    display: block;
+}
+
+.tab .dropdown-content button {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background-color: #fafafa;
+    width: 100%;
+}
+.tab .dropdown-content button:hover {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Style the dropdown arrow */
+.tab .fa-caret-down {
+    margin-left: 2px;
+}
+
+.keywords-container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    border: none;
+    overflow: scroll;
+    padding: 5px;
+}
+
+
+/* Style for the table within .keywords-container*/
+.keywords-container table {
+    width: 100%;
+    background-color: #f5f5f5; /* Background color */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Style for table cells (td) */
+.keywords-container td {
+    padding: 7.5px;
+    border: 1px solid #ccc;
+}
+.keywords-container tr{
+    display:table-row;
+}
+
+.export-button {
+    background-color: #a0cca2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  .export-button:hover {
+    background-color: #858b91;
+  }
+
+
+  label {
+    margin: 10px 0;
+  }
+
+
+
+  select {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Style the dropdown arrow */
+  select::after {
+    content: "▼"; /* Custom arrow symbol */
+    position: absolute;
+    right: 10px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ignore pointer events on the arrow */
+  }
+
+  #algorithm {
+    width: 220px; /* Wider to accommodate the text */
+  }
+
+  #result-container {
+    margin: 20px;
+    font-weight:
+  }
+
+  .form-group{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }

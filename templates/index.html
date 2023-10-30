@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI_Pro</title>
+    <link rel="icon" type="image/png" href="../static/images/l2.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../static/js/index.js"></script>
+
+
+    <script>
+        var result_dict = JSON.parse('{{ result_dict | safe }}');
+        var keybert_relevance_dict_wo = JSON.parse('{{ keybert_relevance_dict_wo | safe }}');
+        var spacey_tfidf_dict_wo = {{ spacey_tfidf_dict_wo | safe }};
+        var rake_unconstrained_dict_wo = {{ rake_unconstrained_dict_wo | safe }};
+        var nltk_word_dict_wo = {{ nltk_word_dict_wo | safe }};
+        var textrank_phrase_dict_wo = {{ textrank_phrase_dict_wo | safe }};
+        var yake_phrase_dict_wo = {{ yake_phrase_dict_wo | safe }};
+        var pke_phrase_dict_wo = {{ pke_phrase_dict_wo | safe }};
+
+        var keybert_relevance_dict = JSON.parse('{{ keybert_relevance_dict | safe }}');
+        var spacey_tfidf_dict = {{ spacey_tfidf_dict | safe }};
+        var rake_unconstrained_dict = {{ rake_unconstrained_dict | safe }};
+        var nltk_word_dict = {{ nltk_word_dict | safe }};
+        var textrank_phrase_dict = {{ textrank_phrase_dict | safe }};
+        var yake_phrase_dict = {{ yake_phrase_dict | safe }};
+        var pke_phrase_dict = {{ pke_phrase_dict | safe }};
+    </script>
+    
+</head>
+<body>
+    <div class="left">
+        <div class="top-container">
+            <div class="top-left">
+                <div class="icon-container">
+                    <a href="/">
+                        <img src="../static/images/l2.png" alt="Icon">
+                    </a>
+                </div>
+                
+                <form action="/" method="POST" enctype="multipart/form-data">
+                    <div id="input-search-bar">
+                        <input class="custom-file-upload" type="file" id="myfile" name="myfile" accept=".csv">
+                        <button type="submit" id="main_submit_button" class="custom_button">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+                {% if message %}
+                    <p style="font-size: small;">{{ message }}</p>
+                {% else %}
+                    <ul>
+                    {% for entry in entries %}
+                        <button id="company-button-{{ entry }}" class="company-domain" onclick="toggleActive(this)">{{ entry }}</button>
+                    {% endfor %}
+                    
+                    </ul>
+                {% endif %}
+            </div>
+            <div class="bottom-left">
+                <input type="text" id="searchBox" placeholder="Search a keyword">
+                <h3>Status</h3>
+                <div id="status-info"> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="tabs">
+            <div class="tab" id="iframeTab">iFrame</div>
+            <div class="tab" id="scrapedDataTab">Scraped Data</div>
+            <div class="tab" id="processedDataTab">
+                Processed Data <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <button id="algo_one">Algorithm 1</button>
+                    <button id="algo_two">Algorithm 2</button>
+                    <button id="algo_three">Algorithm 3</button>
+                </div>
+            </div>
+            <div class="tab" id="barPlotTab">
+                Line Plot <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <button id="bar_yake">Yake</button>
+                    <button id="bar_keybert">Keybert</button>
+                    <button id="bar_nltk">Nltk</button>
+                    <button id="bar_textrank">TextRank</button>
+                    <button id="bar_spacy">Spacy</button>
+                    <button id="bar_pke">Pke</button>
+                    <button id="bar_rake">Rake</button>
+                </div>
+            </div>
+            <div class="tab" id="wordCloudTab">
+                Word Cloud <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <button id="word_yake">Yake</button>
+                    <button id="word_keybert">Keybert</button>
+                    <button id="word_nltk">Nltk</button>
+                    <button id="word_textrank">TextRank</button>
+                    <button id="word_spacy">Spacy</button>
+                    <button id="word_pke">Pke</button>
+                    <button id="word_rake">Rake</button>
+                </div>
+            </div>
+            <div class="tab" id="keywordsTab">Keywords</div>
+            <div class="tab" id="similarityTab">Similarity</div>
+            <div class="tab" id="resultTab">Results</div>
+            <div class="tab" id="resultgridTab">Result Grid</div>
+        </div>
+        
+        <div class="iframe-container" id="iframeContainer">
+            <iframe id="iframe" src="https://www.dpstele.com/index.php"></iframe>
+        </div>
+        <div class="scraped-data-container" id="scrapedDataContainer">
+        
+        </div>
+        <div class="processed-data-container" id="processedDataContainer">
+        
+        </div>
+        <div class="bar-plot-container" id="barPlotContainer">
+        
+        </div>
+        <div class="word-cloud-container" id="wordcloudContainer">
+        
+        </div>
+        <div class="keywords-container" id="keywordsContainer">
+        
+        </div>
+        <div class="similarity-container" id="similarityContainer">
+        
+        </div>
+        <div class="results-container" id="resultsContainer">
+
+        </div>
+        
+        <div class="resultgrid-container" id="ResultGridContainer">
+          <div id="dropdown-container">
+            <div class="form-group">
+              <label for="datatype">Data Type:</label>
+              <select id="datatype" name="datatype" style="margin-right: 1cm;">
+                <option value="PreProcessed">Pre Processed</option>
+                <option value=woPreProcessing">W/O Pre Processing</option>
+              </select>
+
+              <label for="algorithm">Similarity Algorithm:</label>
+              <select id="algorithm" name="algorithm">
+                <option value="cosine">Cosine Similarity</option>
+                <option value="jaccard">Jaccard Index</option>
+              </select>
+            </div>
+            </div>
+            <button id="export-csv-button" class="export-button">Export CSV</button>
+            <div id="ag-grid" style="height: 600px;width: 100%;" class="ag-theme-alpine">
+        </div>
+
+    </div>
+    <script src="../static/js/similarity-table.js"></script>
+</body>
+</html>

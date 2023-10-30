@@ -1,0 +1,656 @@
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+R.B Allen Company, Inc.
+					131 Lafayette Road
+					North Hampton, NH 03862
+					(800) 258-7264 
+					(603) 964-8140
+rballen@rballen.com
+For our public customers; significant benefits can be realized by buying off the statewide contract known as COMM-PASS. COMM-PASS is the only official procurement record system for the Commonwealth of Massachusetts. Benefits include time savings as well as quality products at competitive prices. The State has already done the vendor screening and offers their program to all qualified public entities. The R.B. Allen Co., Inc. is proud to be included in several State contracts, one of which may be right for you. If you would like additional information on this program please contact us.
+50 years of value, quality, and reliable products
+Sales, Installations, and Products
+System Repair & Emergency Services
+Preventative Maintenance and Testing
+Already a client? Get printable copies of your latest service statements.
+Company
+Our Services
+Contact
+Careers
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+Cascon
+Industries Served
+Training Facility
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+
+
+
+
+
+
+
+
+Contact
+Careers
+ Building Reports Login  >
+
+
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Cascon
+Industries Served
+Training Facility
+ 
+
+
+
+    jQuery(document).ready(function($) {
+        $(".royalSlider").royalSlider({
+            keyboardNavEnabled: true,
+    	    loop: true,
+            autoScaleSlider: false,
+    		slidesSpacing: 0,
+    		transitionSpeed: 800,
+    		slidesOrientation: 'vertical',
+            controlNavigation: 'none',
+            arrowsNavAutoHide: false,
+    	    autoPlay: {
+        		enabled: true,
+        		delay: 5000,
+        		pauseOnHover: false
+    	    }
+        });
+    });
+    
+
+
+
+
+Covering all of New England
+R.B. Allen is New England’s largest independent provider of engineered fire alarm systems.
+View Our Services 
+
+
+
+
+
+
+
+Sales, Installationsand Products
+R.B. Allen has designed, installed, and maintained 1000's of systems in New England.
+Get Started 
+
+
+
+
+
+
+
+Maintenance and Testing
+Our crews are certified for extensive servicing of any fire alarm and fire sprinkler systems.
+Test Your System 
+
+
+
+
+
+
+
+50 years of value, quality, and reliable products
+
+
+
+Sales, Installations, and Products
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+Learn More
+
+
+
+System Repair & Emergency Services
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Learn More
+
+
+
+Preventative Maintenance and Testing
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+Learn More
+
+
+
+
+
+
+
+
+
+Client Login
+
+
+
+
+Already a client? Get printable copies of your latest service statements.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+
+
+
+
+
+
+
+
+R.B Allen Company, Inc.
+					131 Lafayette Road
+					North Hampton, NH 03862
+					(800) 258-7264 
+					(603) 964-8140
+rballen@rballen.com
+
+
+Company
+About Us
+Contact Us
+Industries Served
+Training Facility
+
+
+Our Services
+New Installations and Products
+System Repair & Emergency Services
+Preventative Maintenance and Services
+
+
+
+
+
+
+ RB Allen, LLC   © 2023. 
+
+	
+
+ div#footers-css  a { text-align:center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 0px;   color: gray; }  
+ div#footer-css  { text-align:center; font-style: normal; text-decoration: none; font-weight: normal; font-size: 0px;   color: gray; }  
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+ orange-b2b.com .  Read reviews if you want proof of our value, quality, and reliable products .  https://matureones.com/ .  advanceroofingllc.com - corrugated metal roofing .  vêtements femme Massachusetts State Bid ListFor our public customers; significant benefits can be realized by buying off the statewide contract known as COMM-PASS. COMM-PASS is the only official procurement record system for the Commonwealth of Massachusetts. Benefits include time savings as well as quality products at competitive prices. The State has already done the vendor screening and offers their program to all qualified public entities. The R.B. Allen Co., Inc. is proud to be included in several State contracts, one of which may be right for you. If you would like additional information on this program please contact us.
+×
+
+
+/* <![CDATA[ */
+var emodal_themes = [];
+emodal_themes = {"1":{"id":"1","theme_id":"1","overlay":{"background":{"color":"#000000","opacity":59}},"container":{"padding":25,"background":{"color":"#ffffff","opacity":100},"border":{"style":"solid","color":"#2f313f","width":5,"radius":15},"boxshadow":{"inset":"no","horizontal":1,"vertical":1,"blur":3,"spread":0,"color":"#020202","opacity":23}},"close":{"text":"&#215;","location":"topright","position":{"top":0,"left":0,"bottom":0,"right":0},"padding":2.5,"background":{"color":"#000000","opacity":100},"font":{"color":"#f20000","size":15,"family":"Times New Roman"},"border":{"style":"none","color":"#ffffff","width":1,"radius":10},"boxshadow":{"inset":"no","horizontal":0,"vertical":0,"blur":0,"spread":0,"color":"#020202","opacity":23},"textshadow":{"horizontal":0,"vertical":0,"blur":0,"color":"#000000","opacity":23}},"title":{"font":{"color":"#3F7D7D","size":32,"family":"Tahoma"},"text":{"align":"left"},"textshadow":{"horizontal":0,"vertical":0,"blur":0,"color":"#020202","opacity":23}},"content":{"font":{"color":"#333237","family":"Times New Roman"}}}};;
+/* ]]> */
+
+
+
+
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.rballen.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44647093-1', 'rballen.com');
+  ga('send', 'pageview');
+
+
+
+
+
+
+
+
+
+
+
+
+Contact
+Careers
+ Building Reports Login  >
+
+
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Cascon
+Industries Served
+Training Facility
+ 
+
+
+
+
+
+
+
+
+
+
+Contact
+Careers
+ Building Reports Login  >
+
+
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Cascon
+Industries Served
+Training Facility
+ 
+
+
+
+
+
+
+
+
+Contact
+Careers
+ Building Reports Login  >
+
+
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Cascon
+Industries Served
+Training Facility
+ 
+
+Contact
+Careers
+ Building Reports Login  >
+
+Contact
+Careers
+
+Building Reports Login  >
+About
+Services
+
+Fire Alarm System Sales, Installations, and Services
+System Repair and Emergency Services
+Preventative Maintenance and Testing
+
+
+Cascon
+Industries Served
+Training Facility
+
+
+
+
+
+Covering all of New England
+R.B. Allen is New England’s largest independent provider of engineered fire alarm systems.
+View Our Services 
+
+
+
+
+
+
+
+Sales, Installationsand Products
+R.B. Allen has designed, installed, and maintained 1000's of systems in New England.
+Get Started 
+
+
+
+
+
+
+
+Maintenance and Testing
+Our crews are certified for extensive servicing of any fire alarm and fire sprinkler systems.
+Test Your System 
+
+
+
+
+
+
+
+
+Covering all of New England
+R.B. Allen is New England’s largest independent provider of engineered fire alarm systems.
+View Our Services 
+
+
+
+
+
+
+Covering all of New England
+R.B. Allen is New England’s largest independent provider of engineered fire alarm systems.
+View Our Services 
+
+
+
+
+Covering all of New England
+R.B. Allen is New England’s largest independent provider of engineered fire alarm systems.
+View Our Services 
+
+
+
+
+Sales, Installationsand Products
+R.B. Allen has designed, installed, and maintained 1000's of systems in New England.
+Get Started 
+
+
+
+
+
+
+Sales, Installationsand Products
+R.B. Allen has designed, installed, and maintained 1000's of systems in New England.
+Get Started 
+
+
+
+
+Sales, Installationsand Products
+R.B. Allen has designed, installed, and maintained 1000's of systems in New England.
+Get Started 
+
+
+
+
+Maintenance and Testing
+Our crews are certified for extensive servicing of any fire alarm and fire sprinkler systems.
+Test Your System 
+
+
+
+
+
+
+Maintenance and Testing
+Our crews are certified for extensive servicing of any fire alarm and fire sprinkler systems.
+Test Your System 
+
+
+
+
+Maintenance and Testing
+Our crews are certified for extensive servicing of any fire alarm and fire sprinkler systems.
+Test Your System 
+
+
+
+50 years of value, quality, and reliable products
+
+
+
+Sales, Installations, and Products
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+Learn More
+
+
+
+System Repair & Emergency Services
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Learn More
+
+
+
+Preventative Maintenance and Testing
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+Learn More
+
+
+
+
+
+
+50 years of value, quality, and reliable products
+
+
+
+Sales, Installations, and Products
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+Learn More
+
+
+
+System Repair & Emergency Services
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Learn More
+
+
+
+Preventative Maintenance and Testing
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+Learn More
+
+
+
+
+
+
+
+Sales, Installations, and Products
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+Learn More
+
+
+
+System Repair & Emergency Services
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Learn More
+
+
+
+Preventative Maintenance and Testing
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+Learn More
+
+
+
+
+Sales, Installations, and Products
+The R. B. Allen Company will work with you through every aspect of the design, submittal, and approval process of your fire alarm system.
+Learn More
+
+
+
+System Repair & Emergency Services
+24/7/365 support for all of our customers. In an emergency, our contracted customers can contact our call center and be connected with an on-call technician.
+Learn More
+
+
+
+Preventative Maintenance and Testing
+Our technicians have decades of experience in preventative maintenance of fire alarm systems. All technicians are licensed and factory certified.
+Learn More
+
+
+
+
+
+Client Login
+
+
+
+
+Already a client? Get printable copies of your latest service statements.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+
+
+
+
+
+
+
+Client Login
+
+
+
+
+Already a client? Get printable copies of your latest service statements.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+
+
+
+
+
+Client Login
+
+
+
+
+Already a client? Get printable copies of your latest service statements.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+
+
+
+Already a client? Get printable copies of your latest service statements.
+BuildingReports innovative fire and life safety inspection solutions provide accurate, trusted inspections that are fully documented in compliance with regulatory standards.
+
+
+
+
+
+R.B Allen Company, Inc.
+					131 Lafayette Road
+					North Hampton, NH 03862
+					(800) 258-7264 
+					(603) 964-8140
+rballen@rballen.com
+
+
+Company
+About Us
+Contact Us
+Industries Served
+Training Facility
+
+
+Our Services
+New Installations and Products
+System Repair & Emergency Services
+Preventative Maintenance and Services
+
+
+
+
+
+
+
+
+
+R.B Allen Company, Inc.
+					131 Lafayette Road
+					North Hampton, NH 03862
+					(800) 258-7264 
+					(603) 964-8140
+rballen@rballen.com
+
+
+Company
+About Us
+Contact Us
+Industries Served
+Training Facility
+
+
+Our Services
+New Installations and Products
+System Repair & Emergency Services
+Preventative Maintenance and Services
+
+
+
+
+
+
+
+R.B Allen Company, Inc.
+					131 Lafayette Road
+					North Hampton, NH 03862
+					(800) 258-7264 
+					(603) 964-8140
+rballen@rballen.com
+
+
+Company
+About Us
+Contact Us
+Industries Served
+Training Facility
+
+
+Our Services
+New Installations and Products
+System Repair & Emergency Services
+Preventative Maintenance and Services
+
+
+
+
+ RB Allen, LLC   © 2023. 
+
+	
+
+
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+ orange-b2b.com .  Read reviews if you want proof of our value, quality, and reliable products .  https://matureones.com/ .  advanceroofingllc.com - corrugated metal roofing .  vêtements femme 
+
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+ orange-b2b.com .  Read reviews if you want proof of our value, quality, and reliable products .  https://matureones.com/ .  advanceroofingllc.com - corrugated metal roofing .  vêtements femme 
+Massachusetts State Bid ListFor our public customers; significant benefits can be realized by buying off the statewide contract known as COMM-PASS. COMM-PASS is the only official procurement record system for the Commonwealth of Massachusetts. Benefits include time savings as well as quality products at competitive prices. The State has already done the vendor screening and offers their program to all qualified public entities. The R.B. Allen Co., Inc. is proud to be included in several State contracts, one of which may be right for you. If you would like additional information on this program please contact us.
+×
+Massachusetts State Bid List
+For our public customers; significant benefits can be realized by buying off the statewide contract known as COMM-PASS. COMM-PASS is the only official procurement record system for the Commonwealth of Massachusetts. Benefits include time savings as well as quality products at competitive prices. The State has already done the vendor screening and offers their program to all qualified public entities. The R.B. Allen Co., Inc. is proud to be included in several State contracts, one of which may be right for you. If you would like additional information on this program please contact us.
+
